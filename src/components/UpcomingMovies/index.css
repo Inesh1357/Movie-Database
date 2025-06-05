@@ -1,0 +1,64 @@
+.movie-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  background-color: #f8f9fa;
+  list-style-type: none;
+}
+
+.movie-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 12px 0 6px;
+  color: #333;
+}
+
+.movie-rating {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.details-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.details-button:hover {
+  background-color: #0056b3;
+}
+
+.loader {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
